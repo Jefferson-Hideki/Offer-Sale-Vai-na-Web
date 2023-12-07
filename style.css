@@ -1,0 +1,195 @@
+:root {
+  --color-white: #F9F9F9;
+  --color-primary: #5CA720;
+  --color-secondary: #512200;
+  --color-black: #161616;
+  --color-gray: #A5A1A1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Lato', sans-serif;
+  background-color: var(--color-white);
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 70px;
+}
+
+/* HEADER */
+header {
+  height: 94px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  width: 120px;
+}
+
+nav {
+  display: flex;
+  gap: 35px;
+  align-items: center;
+}
+
+nav a img {
+  width: 22px;
+}
+
+/* FIM DO HEADER */
+
+/* BANNER */
+.banner {
+  height: 375px;
+}
+
+.banner img {
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+/* FIM DO BANNER */
+
+/* OFFER SECTION */
+.offer-section {
+  padding-top: 33px;
+  padding-bottom: 33px;
+  border-bottom: 0.2px solid var(--color-gray);
+}
+
+.offer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.offer h2 {
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.offer p {
+  font-size: 18px;
+  line-height: 21.6px;
+  font-weight: 400;
+}
+
+/* FIM DO OFFER SECTION */
+
+/* PRODUCTS SECTION */
+.product-list {
+  padding-top: 33px;
+  padding-bottom: 33px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  place-items: center;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  width: 303px;
+  gap: 11px;
+}
+
+.product img {
+  width: 303px;
+  height: 303px;
+  object-fit: cover;
+  margin-bottom: 11px;
+}
+
+.product h2 {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 26.4px;
+}
+
+.product .price {
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  color: var(--color-black);
+}
+
+.product .price span {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+.product .buy-btn {
+  text-decoration: none;
+  width: fit-content;
+}
+
+.product .buy-btn button {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  cursor: pointer;
+  width: 170px;
+  height: 51px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 28.8px;
+  font-weight: 700;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease-in-out;
+}
+
+.product .buy-btn button:hover {
+  background-color: var(--color-secondary);
+}
+
+/* FIM DO PRODUCTS SECTION */
+
+/* FOOTER */
+footer {
+  background-color: #f9f9f9;
+  border-top: 0.6px solid var(--color-gray);
+  padding: 70px 70px 55px;
+}
+
+.top-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.top-footer nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.top-footer nav a {
+  text-decoration: none;
+  color: var(--color-black);
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+
+
+/* FIM DO FOOTER */
